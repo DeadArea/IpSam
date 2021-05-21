@@ -26,3 +26,22 @@ body {font-family:'Roboto' ,'Noto Sans KR', 'sans-serif';}
 .mt10{ margin-top:10px; }
 .mt5{ margin-top:5px; }
 .mr5{ margin-right:5px; }
+
+
+.user-photo{
+	width:38px;
+	height:38px;
+}
+/* 위로가기버튼 */
+.ac-sub-go-top{
+  width: 30px;
+  height: 30px;
+  bottom:calc(50% - 35px);
+  position: fixed;
+  right: calc((100% - 1200px)/ 2 - 80px);
+  display: inline-block;
+  background:rgba(255,255,255,0.7);
+  border: none;
+  background-size: 50%;
+  display: none;
+}

@@ -1,28 +1,8 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&family=Roboto:wght@100;300;400&display=swap');
-
-body {font-family:'Roboto' ,'Noto Sans KR', 'sans-serif';}
-
-@font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    src: local('※'),
-    url('../fonts/Roboto-Regular.eot'),
-    url('../fonts/Roboto-Regular.eot#iefix') format('embedded-opentype')
-    url('../fonts/Roboto-Regular.woff') format('woff'),
-    url('../fonts/Roboto-Regular.otf') format('opentype'),
-    url('../fonts/Roboto-Regular.ttf') format('truetype');
-    unicode-range:U+0041-005A, U+0061-007A, U+0030-0039;
-}
-
 
 .container-tap-menu{
     margin-top:150px;
-    margin-left:30px;
-    margin-right:30px;
 }
 
 .container-tap-menu > div > ul > li > a{
