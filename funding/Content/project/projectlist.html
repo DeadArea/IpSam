@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
+		<title>크라우드 펀딩</title>
+	
+		<!-- 부트스트랩 -->
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+		<!-- 폰트어썸 -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+		
+		<link href="../css/common.css" rel="stylesheet">
+		<link href="../css/main.css" rel="stylesheet">
+		
+		
+		<link href="../css/projectlayout.css" rel="stylesheet">
+		
+		<!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
+		<!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
+		<!--[if lt IE 9]>
+		      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+	    
+		<!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+		<script src="../js/jquery-3.3.1.min.js"></script>
+		<!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
+		<script src="../js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="container-fluid">
+				<nav>
+					<div class="container">
+						<div class="pull-left">
+							<img src="">
+							<ul class="list-inline">
+								<li>
+									<a href="">
+										프로젝트 목록
+									</a>
+								</li>
+								<li>
+									<a href="">
+										프로젝트 올리기
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="pull-right">
+							<ul class="list-inline">
+								<li>
+									<div class="serchprodiv">
+										<form>
+											<input type="text" class="" placeholder="어떤 프로젝트를 찾으시나요?">
+										</form>
+									</div>
+								</li>
+								<li>
+									<ul class="list-inline">
+										<li>
+											<a href="">
+												로그인
+											</a>
+										</li>
+										<li>
+											<a href="">
+												회원가입
+											</a>
+										</li>
+										<li>
+											<img class="user-photo" src="../img/user-account.png" >
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</nav>
+			</div>
+ 		   <script src="../js/scrollup.js"></script>
+			<button type="button" name="button" class="ac-sub-go-top"><i class="fas fa-arrow-up"></i></button>
+			<div class="clearboth"></div>
+		</header>
+		
+		<section>
+			<div class="container">
+				<div class="categorydiv">
+					<div>
+						<a href="">
+							<span class="category-part">
+								<span class="category-1"></span>
+								<span>전체보기</span>
+							</span>
+						</a>
+						<a href="">
+							<span class="category-part">
+								<span class="category-1"></span>
+								<span>음악</span>
+							</span>
+						</a>
+						<a href="">
+							<span class="category-part">
+								<span class="category-1"></span>
+								<span>디자인</span>
+							</span>
+						</a>
+						<a href="">
+							<span class="category-part">
+								<span class="category-1"></span>
+								<span>만화</span>
+							</span>
+						</a>
+						<a href="">
+							<span class="category-part">
+								<span class="category-1"></span>
+								<span>영화,비디오</span>
+							</span>
+						</a>
+						<a href="">
+							<span class="category-part">
+								<span class="category-1"></span>
+								<span>패션</span>
+							</span>
+						</a>
+						<a href="">
+							<span class="category-part">
+								<span class="category-1"></span>
+								<span>공예</span>
+							</span>
+						</a>
+						<a href="">
+							<span class="category-part">
+								<span class="category-1"></span>
+								<span>예술</span>
+							</span>
+						</a>
+						<a href="">
+							<span class="category-part">
+								<span class="category-1"></span>
+								<span>출판</span>
+							</span>
+						</a>
+						<a href="">
+							<span class="category-part">
+								<span class="category-1"></span>
+								<span>오픈예정</span>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="listifodiv">
+					<div class="pull-left">
+						<p class="procount"><span>1,234</span>개의 프로젝트가 있습니다.</p>
+					</div>
+					<div class="pull-right">
+						<div class="dropdown">
+							<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+								인기순 <span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu" role="menu"
+								aria-labelledby="dropdownMenu1">
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">인기순</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">최다 후원순</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">최다 금액순</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">마감 임박순</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="listdiv">
+					<div class="row">
+						<div class="col-md-4 project-item">
+							<div class="item-h">
+								<div class="project-card">
+									<div class="item-heart pointer">
+										<button type="button" class="heart-btn"></button>
+									</div>
+									<div class="item-image">
+										<a href="project-view.html">
+											<img src="../img/1q87.jpg">
+										</a>
+									</div>
+									<div class="item-view">
+										<ul class="list-unstyled">
+											<li class="item-title"><a href="">'김태균' 정규앨범 [상업예술]</a></li>
+											<li class="item-info"><a href="">음악</a> | 김태균</li>
+											<li class="item-content"><a href="">정규앨범 [상업예술]을 여러분과 함께 제작하고 싶습니다.</a></li>
+										</ul>
+									</div>
+									<div class="item-moneybar"></div>
+									<div class="item-funddingstat">
+										<span class="fundding-amount">3,000,000원</span>
+										<span class="percent">30%</span>
+										<span class="rest-day">8일 남음</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 project-item">
+							<div class="item-h">
+								<div class="project-card">
+									<div class="item-heart pointer">
+										<button type="button" class="heart-btn"></button>
+									</div>
+									<div class="item-image">
+										<a href="">
+											<img src="../img/1q87.jpg">
+										</a>
+									</div>
+									<div class="item-view">
+										<ul class="list-unstyled">
+											<li class="item-title"><a href="">'김태균' 정규앨범 [상업예술]</a></li>
+											<li class="item-info"><a href="">음악</a> | 김태균</li>
+											<li class="item-content"><a href="">정규앨범 [상업예술]을 여러분과 함께 제작하고 싶습니다.</a></li>
+										</ul>
+									</div>
+									<div class="item-moneybar"></div>
+									<div class="item-funddingstat">
+										<span class="fundding-amount">3,000,000원</span>
+										<span class="percent">30%</span>
+										<span class="rest-day">8일 남음</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 project-item">
+							<div class="item-h">
+								<div class="project-card">
+									<div class="item-heart pointer">
+										<button type="button" class="heart-btn"></button>
+									</div>
+									<div class="item-image">
+										<a href="">
+											<img src="../img/1q87.jpg">
+										</a>
+									</div>
+									<div class="item-view">
+										<ul class="list-unstyled">
+											<li class="item-title"><a href="">'김태균' 정규앨범 [상업예술]</a></li>
+											<li class="item-info"><a href="">음악</a> | 김태균</li>
+											<li class="item-content"><a href="">정규앨범 [상업예술]을 여러분과 함께 제작하고 싶습니다.</a></li>
+										</ul>
+									</div>
+									<div class="item-moneybar"></div>
+									<div class="item-funddingstat">
+										<span class="fundding-amount">3,000,000원</span>
+										<span class="percent">30%</span>
+										<span class="rest-day">8일 남음</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 project-item">
+							<div class="item-h">
+								<div class="project-card">
+									<div class="item-heart pointer">
+										<button type="button" class="heart-btn"></button>
+									</div>
+									<div class="item-image">
+										<a href="">
+											<img src="../img/1q87.jpg">
+										</a>
+									</div>
+									<div class="item-view">
+										<ul class="list-unstyled">
+											<li class="item-title"><a href="">'김태균' 정규앨범 [상업예술]</a></li>
+											<li class="item-info"><a href="">음악</a> | 김태균</li>
+											<li class="item-content"><a href="">정규앨범 [상업예술]을 여러분과 함께 제작하고 싶습니다.</a></li>
+										</ul>
+									</div>
+									<div class="item-moneybar"></div>
+									<div class="item-funddingstat">
+										<span class="fundding-amount">3,000,000원</span>
+										<span class="percent">30%</span>
+										<span class="rest-day">8일 남음</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 project-item">
+							<div class="item-h">
+								<div class="project-card">
+									<div class="item-heart pointer">
+										<button type="button" class="heart-btn"></button>
+									</div>
+									<div class="item-image">
+										<a href="">
+											<img src="../img/1q87.jpg">
+										</a>
+									</div>
+									<div class="item-view">
+										<ul class="list-unstyled">
+											<li class="item-title"><a href="">'김태균' 정규앨범 [상업예술]</a></li>
+											<li class="item-info"><a href="">음악</a> | 김태균</li>
+											<li class="item-content"><a href="">정규앨범 [상업예술]을 여러분과 함께 제작하고 싶습니다.</a></li>
+										</ul>
+									</div>
+									<div class="item-moneybar"></div>
+									<div class="item-funddingstat">
+										<span class="fundding-amount">3,000,000원</span>
+										<span class="percent">30%</span>
+										<span class="rest-day">8일 남음</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 project-item">
+							<div class="item-h">
+								<div class="project-card">
+									<div class="item-heart pointer">
+										<button type="button" class="heart-btn"></button>
+									</div>
+									<div class="item-image">
+										<a href="">
+											<img src="../img/1q87.jpg">
+										</a>
+									</div>
+									<div class="item-view">
+										<ul class="list-unstyled">
+											<li class="item-title"><a href="">'김태균' 정규앨범 [상업예술]</a></li>
+											<li class="item-info"><a href="">음악</a> | 김태균</li>
+											<li class="item-content"><a href="">정규앨범 [상업예술]을 여러분과 함께 제작하고 싶습니다.</a></li>
+										</ul>
+									</div>
+									<div class="item-moneybar"></div>
+									<div class="item-funddingstat">
+										<span class="fundding-amount">3,000,000원</span>
+										<span class="percent">30%</span>
+										<span class="rest-day">8일 남음</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 project-item">
+							<div class="item-h">
+								<div class="project-card">
+									<div class="item-heart pointer">
+										<button type="button" class="heart-btn"></button>
+									</div>
+									<div class="item-image">
+										<a href="">
+											<img src="../img/1q87.jpg">
+										</a>
+									</div>
+									<div class="item-view">
+										<ul class="list-unstyled">
+											<li class="item-title"><a href="">'김태균' 정규앨범 [상업예술]</a></li>
+											<li class="item-info"><a href="">음악</a> | 김태균</li>
+											<li class="item-content"><a href="">정규앨범 [상업예술]을 여러분과 함께 제작하고 싶습니다.</a></li>
+										</ul>
+									</div>
+									<div class="item-moneybar"></div>
+									<div class="item-funddingstat">
+										<span class="fundding-amount">3,000,000원</span>
+										<span class="percent">30%</span>
+										<span class="rest-day">8일 남음</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 project-item">
+							<div class="item-h">
+								<div class="project-card">
+									<div class="item-heart pointer">
+										<button type="button" class="heart-btn"></button>
+									</div>
+									<div class="item-image">
+										<a href="">
+											<img src="../img/1q87.jpg">
+										</a>
+									</div>
+									<div class="item-view">
+										<ul class="list-unstyled">
+											<li class="item-title"><a href="">'김태균' 정규앨범 [상업예술]</a></li>
+											<li class="item-info"><a href="">음악</a> | 김태균</li>
+											<li class="item-content"><a href="">정규앨범 [상업예술]을 여러분과 함께 제작하고 싶습니다.</a></li>
+										</ul>
+									</div>
+									<div class="item-moneybar"></div>
+									<div class="item-funddingstat">
+										<span class="fundding-amount">3,000,000원</span>
+										<span class="percent">30%</span>
+										<span class="rest-day">8일 남음</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 project-item">
+							<div class="item-h">
+								<div class="project-card">
+									<div class="item-heart pointer">
+										<button type="button" class="heart-btn"></button>
+									</div>
+									<div class="item-image">
+										<a href="">
+											<img src="../img/1q87.jpg">
+										</a>
+									</div>
+									<div class="item-view">
+										<ul class="list-unstyled">
+											<li class="item-title"><a href="">'김태균' 정규앨범 [상업예술]</a></li>
+											<li class="item-info"><a href="">음악</a> | 김태균</li>
+											<li class="item-content"><a href="">정규앨범 [상업예술]을 여러분과 함께 제작하고 싶습니다.</a></li>
+										</ul>
+									</div>
+									<div class="item-moneybar"></div>
+									<div class="item-funddingstat">
+										<span class="fundding-amount">3,000,000원</span>
+										<span class="percent">30%</span>
+										<span class="rest-day">8일 남음</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 project-item">
+							<div class="item-h">
+								<div class="project-card">
+									<div class="item-heart pointer">
+										<button type="button" class="heart-btn"></button>
+									</div>
+									<div class="item-image">
+										<a href="">
+											<img src="../img/1q87.jpg">
+										</a>
+									</div>
+									<div class="item-view">
+										<ul class="list-unstyled">
+											<li class="item-title"><a href="">'김태균' 정규앨범 [상업예술]</a></li>
+											<li class="item-info"><a href="">음악</a> | 김태균</li>
+											<li class="item-content"><a href="">정규앨범 [상업예술]을 여러분과 함께 제작하고 싶습니다.</a></li>
+										</ul>
+									</div>
+									<div class="item-moneybar"></div>
+									<div class="item-funddingstat">
+										<span class="fundding-amount">3,000,000원</span>
+										<span class="percent">30%</span>
+										<span class="rest-day">8일 남음</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><!-- row end -->
+				</div>
+			</div>
+		</section>
+		
+		<footer>
+		</footer>
+	</body>
+</html>

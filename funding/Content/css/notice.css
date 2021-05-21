@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&family=Roboto:wght@100;300;400&display=swap');
+
+body {font-family:'Roboto' ,'Noto Sans KR', 'sans-serif';}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: local('※'),
+    url('../fonts/Roboto-Regular.eot'),
+    url('../fonts/Roboto-Regular.eot#iefix') format('embedded-opentype')
+    url('../fonts/Roboto-Regular.woff') format('woff'),
+    url('../fonts/Roboto-Regular.otf') format('opentype'),
+    url('../fonts/Roboto-Regular.ttf') format('truetype');
+    unicode-range:U+0041-005A, U+0061-007A, U+0030-0039;
+}
+
+
+.container-tap-menu{
+    margin-top:150px;
+    margin-left:30px;
+    margin-right:30px;
+}
+
+.container-tap-menu > div > ul > li > a{
+    width:200px;
+    height:60px;
+    text-align: center;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+.tab-content > .active {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:100px;
+    text-align: center;
+}
+
+@keyframes eventAnimationUp{
+    0%{
+        transform: translateY(-300px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes eventAnimationDown{
+    0%{
+        transform: translateY(300px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+#event.active > div{
+    display: block;
+    width:350px;
+    margin-left:20px;
+}
+#event.active > div:nth-child(2n-1){
+    animation-name: eventAnimationUp;
+    animation-duration: 1s;
+}
+#event.active > div:nth-child(2n){
+    animation-name: eventAnimationDown;
+    animation-duration: 1s;
+    margin-top:100px;
+}
+
+#event.active > div > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.ev-img{
+    background-color: aqua;
+    height:400px;
+    border-radius: 20px;
+}
+
+.ev-disc{
+    background-color: burlywood;
+    height:400px;
+
+}
+#faq.active > div{
+    margin-left:100px;
+    width:60%;
+}
+#faq > div > div >div{
+    transition: height 0.2s;
+}

@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+/* 관리자페이지 */
+header { padding-bottom:30px;}
+.adminheader-top { background:#c4c8ff; border-bottom:1px solid #f8f8f8 }
+.adminheader-top  a { color:#717171; font-size:11px; }
+.adminheader-top  img { height:100%; }
+
+.adminmenu {}
+.adminmenulist li { width:100%;}
+.adminmenulist li a {
+	display:inline-block; padding:20px 0;
+	width:100%; text-align:center; font-size:16px;
+	border-top:1px solid #111;
+	border-left:1px solid #111;
+	border-right:1px solid #111;
+	color:#333;
+}
+.adminmenulist li:last-child a {
+	border-bottom:1px solid #111;
+}
+
+.OrderStatus { margin-top:100px; }
+.OrderStatus .OrderStatusdiv { 
+	float:left;  width:200px;height:200px; 
+	margin:10px;border:1px solid #333; 
+	text-align:center;
+}
+
+/* 상품리스트 */
+.productsearchdiv .select { float:left; height:26px; font-size:16px; }
+.productsearchdiv .search_word { float:left; }
+.productsearchdiv .btn_search { float:left; }
+.productwrite-btn { 
+	float:right; display:inline-block; 
+	padding :3px 10px; background:#ee982d; color:#fff;	
+}
+
+.adminproductlistdiv { clear:both; padding-top:30px; padding-bottom:30px;}
+.adminproductlisttable { width:100%;}
+.adminproductlisttable tr th, .adminproductlisttable tr td {
+	text-align:center; border:1px solid #c7c7c7;
+}
+.adminproductlisttable tr th { background:#e2e2e2; }
+.adminproductlisttable tr td img { width:50px; }
+
+/* 상품 등록 */
+.productwritetable { width:80%;}
+.productwritetable tr td {
+	padding:10px; border:1px solid #333;
+}
+.productwritetable tr td:first-child {
+	text-align:center;
+}
+.productwritetable tr td input {
+	width:90%;
+}
+.productwritesubmitbtn { padding:10px; border-radius:5px;}
+
+/* 상품보기 */
+.viewdiv {  }
+.viewtable { width: 80%; }
+.viewtable tr th, .viewtable tr td { border:1px solid #333; padding:10px;}
+.viewtable tr td img { width:100px;}
+.list-btn, .delete-btn, .modify-btn { padding:5px 10px; display:inline-block; font-size:20px; color:#fff; border-radius:5px;}
+.list-btn { background:#cf882f }
+.delete-btn { background:#fa2828; cursor:pointer; }
+.modify-btn { background:#5096ff;  }
+
+/* 주문 리스트 */
+.order-content .checktable { width:100%; }
+.order-content .checktable tr td, .order-content .checktable tr th { padding:10px 0px; text-align:center;}
+.order-content .checktable tr th {
+	font-size:13px; border-top:2px solid #333;
+	background:#eee;
+}
+.order-content .checktable tr td {
+	font-size:12px; border-top:1px solid #dedede;
+}
+.order-content .checktable tr td:first-child {
+	vertical-align:middle;
+}
+.order-content .checktable tr td:first-child input{
+	vertical-align:-2px;
+}
+.order-content .checktable tr td img { width:80px;}
+
+/* 문의 리스트 */
+.qna-contents .qna-table { width:100%; }
+.qna-contents .qna-table tr th, .qna-contents .qna-table tr td { padding:10px 0px; text-align:center; }
+.qna-contents .qna-table tr th {
+	border-top:2px solid #333;
+	border-bottom: 1px solid #dedede;
+	background:#eee;
+}
+.qna-contents .qna-table tr td{
+	border-bottom: 1px solid #dedede;
+}
+.qna-contents .qna-table tr td a{ color: #333; }
+
+/* 페이지 네이션, 검색상자 */
+.pagediv { text-align:center;}
+.pagination>li>a, .pagination>li>span { color:#333; }
+.search_div > .text-left{float:left;}
+.search_div > .text-right{float:right;}	
+.search_div > .text-right > input {font-size:13px; margin-bottom:2px;}	
+.search_div > .text-right > a {
+	display:inline-block; padding:1px 3px; 
+	color:#fff; font-size:14px; 
+	border:1px solid #c7c7c7; 
+	background:#c7c7c7; border-radius:5px;
+}
+
+/* 문의 보기,글쓰기 */
+.view-bord-head .view-bord-title {
+	padding: 15px;
+	background: #f7f7f7;
+	border-top: 2px solid #717171;
+	border-bottom: 1px solid #dbdbdb;
+}
+.view-bord-head .view-bord-info {
+	border-bottom: 1px solid #dbdbdb;
+	padding: 10px 15px;
+}
+.question {
+	border-bottom: 1px solid #dbdbdb;
+	padding: 10px 20px;
+}
+.question q strong {
+	font-size: 24px;
+    font-family: arial;
+}
+.write-title {
+    display: block;
+    border: 1px solid #ebecdf;
+    outline: none;
+    word-break: break-all;
+    overflow: hidden;
+    width: 100%;
+    padding: 13px 12px 1px;
+    font-size: 20px;
+    line-height: 12px;
+    min-height: 40px;
+    resize: none;
+    box-sizing: border-box;
+    letter-spacing: -.23px;
+    margin-bottom:30px;
+}
+
+.answer-write{
+	margin-top:30px;
+}
+.answer-btnz{
+	margin-top:30px;
+	text-align: center;
+}
+.answer-btnz .amodify-btn , .answer-btnz .adelete-btn {
+	display:inline-block; padding:10px 15px;
+	border:1px solid #333; cursor:pointer;
+}

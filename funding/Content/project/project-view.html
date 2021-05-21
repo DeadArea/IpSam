@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
+		<title>크라우드 펀딩</title>
+	
+		<!-- 부트스트랩 -->
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+		<!-- 폰트어썸 -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+		
+		<link href="../css/common.css" rel="stylesheet">
+		<link href="../css/main.css" rel="stylesheet">
+		
+		
+		<link href="../css/projectlayout.css" rel="stylesheet">
+		
+		<!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
+		<!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
+		<!--[if lt IE 9]>
+		      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+	    
+		<!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+		<script src="../js/jquery-3.3.1.min.js"></script>
+		<!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
+		<script src="../js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="container-fluid">
+				<nav>
+					<div class="container">
+						<div class="pull-left">
+							<img src="">
+							<ul class="list-inline">
+								<li>
+									<a href="">
+										프로젝트 목록
+									</a>
+								</li>
+								<li>
+									<a href="">
+										프로젝트 올리기
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="pull-right">
+							<ul class="list-inline">
+								<li>
+									<div class="serchprodiv">
+										<form>
+											<input type="text" class="" placeholder="어떤 프로젝트를 찾으시나요?">
+										</form>
+									</div>
+								</li>
+								<li>
+									<ul class="list-inline">
+										<li>
+											<a href="">
+												로그인
+											</a>
+										</li>
+										<li>
+											<a href="">
+												회원가입
+											</a>
+										</li>
+										<li>
+											<img class="user-photo" src="../img/user-account.png" >
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</nav>
+			</div>
+ 		   <script src="../js/scrollup.js"></script>
+			<button type="button" name="button" class="ac-sub-go-top"><i class="fas fa-arrow-up"></i></button>
+			<div class="clearboth"></div>
+		</header>
+		
+		<section>
+			<div class="container">
+				<div class="project-head">
+					<div class="head-info">
+						<div class="head-title">
+							<div class="title-div">
+								<h1 class="">프로젝트 제목</h1>
+								<div class="writer-name">
+									<span>프로젝트 올린사람</span>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-8">
+								<img class="projectimg" src="../img/sang.jpg">
+							</div>
+							<div class="col-md-4">
+								<div class="fundding-info">
+									<div class="item-moneybar"></div>
+									<div class="fundding-amount mt10">3,000,000원 <span class="fundding-stat">펀딩중</span></div>
+									<div class="mt40">
+										<span class="info-text">달성률</span> 
+										<span class="info-now mr5">30%</span> 
+										<span class="info-goal">목표금액 10,000,000원</span>
+									</div>
+									<div class="mt20">
+										<span class="info-text">남은기간</span> 
+										<span class="info-now mr5">9일</span> 
+										<span class="info-goal">2021.05.27종료</span>
+									</div>
+									<div class="mt20">
+										<span class="info-text">참여자</span> 
+										<span class="info-now">100명</span>
+									</div>
+									<div class="mt40 btn-warp">
+										<button type="button" class="like-btn"><i class="fas fa-heart"></i> 121</button>
+										<a class="massege-btn" href="">문의하기</a>
+										<a class="share-btn" href="">공유하기</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section>
+			<div class="project-bar">
+				<div class="container ">
+					<a href="">설명</a>
+					<a href="">커뮤니티</a>
+				</div>
+			</div>
+		</section>
+		
+		<script>
+			$(function(){
+				$(".reward-list").click(function(){
+					var rewardno = $(this).attr('bno');
+					$("#"+rewardno+" ").toggle(500);
+				});
+			});
+		</script>
+		
+		<section class="content-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<div class="project-content mt40">
+							<img src="../img/e00aa4944e08ec3e0f1c5dcfc2420133_151206.jpg">
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="writer-info mt40">
+							<div class="writer-card">
+								<div class="hello">창작자 소개</div>
+								<div class="mt10"><img class="user-photo" src="../img/user-account.png" >프로젝트 올린사람</div>
+								<div class="mt10">
+									<p>소개글 입니다~~~</p>
+								</div>
+							</div>
+						</div>
+						<div class="mt40">리워드 안내</div>
+						<div class="reward-list mt20 pointer" bno="123">
+							<div class="">1,000원</div>
+							<div class="">리워드 제목</div>
+							<div class="">리워드 내용</div>
+							<p class="" id="123" style="display:none;">
+								<button type="button">밀어주기</button>
+							</p>
+						</div>
+						<div class="reward-list mt20 pointer" bno="134">
+							<div class="">5,000원</div>
+							<div class="">리워드 제목</div>
+							<div class="">리워드 내용</div>
+							<p class="" id="134" style="display:none;">
+								<button type="button">밀어주기</button>
+							</p>
+						</div>
+						<div class="reward-list mt20 pointer" bno="153">
+							<div class="">10,000원</div>
+							<div class="">리워드 제목</div>
+							<div class="">리워드 내용</div>
+							<p class="" id="153" style="display:none;">
+								<button type="button">밀어주기</button>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<footer>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,259 @@
+@charset "UTF-8";
+
+
+.user-photo{
+	width:38px;
+	height:38px;
+}
+/* 위로가기버튼 */
+.ac-sub-go-top{
+  width: 30px;
+  height: 30px;
+  bottom:calc(50% - 35px);
+  position: fixed;
+  right: calc((100% - 1200px)/ 2 - 80px);
+  display: inline-block;
+  background:rgba(255,255,255,0.7);
+  border: none;
+  background-size: 50%;
+  display: none;
+}
+
+/* 리스트 카테고리 */
+.categorydiv{
+	margin:14px auto;
+	width: 832px;
+	
+}
+.categorydiv a{
+	color:#555;
+}
+.category-part{
+	display:inline-block;
+	width: 80px;
+	height:60px;
+	font-size:13px;
+	text-align:center;
+}
+.category-1{
+	display:block;
+	background-image:url(../img/1q87.jpg);
+	width:56px; height:56px;
+	border-radius:50%;
+	margin:0 auto;
+}
+
+/* 프로젝트 수, 정렬 조건 */
+.procount {
+	font-size:16px;
+}
+.procount > span{
+	color:#ff9696;
+}
+
+/* 프로젝트 리스트 */
+.listdiv{
+	margin-top:24px;
+}
+.project-item{
+	padding:0px 10px;	
+}
+.item-h{
+	margin-bottom:84px;
+	position:relative;
+}
+.item-heart{
+	position:relative;
+	z-index:9;
+	right: 12px;
+	top:12px;
+	width:24px;
+	height:24px;
+}
+.heart-btn{
+	border: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background: transparent;
+    position: relative;
+    z-index: 2;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heart-btn::before{
+	content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: url(../img/heart.png) 0px 0px / cover no-repeat;
+}
+
+.item-image{
+	border-radius:4px;
+	position:relative;
+	overflow:hidden;
+}
+.item-image a img{
+	width:100%;
+	position:relative;
+}
+
+.item-view{
+	margin-top:16px;
+	min-height:178px;
+}
+/* 프로젝트 제목 */
+.item-title {
+	font-size:20px;
+	margin-bottom:10px;
+}
+/* 프로젝트 카테고리,올린사람 */
+.item-info{
+	font-size: 13px;
+	padding:10px;
+	color:#9e9e9e;
+}
+/* 프로젝트 소개 */
+.item-content{
+	margin:0px 0px 16px;
+	overflow:hidden;
+}
+/* 펀딩 막대기 */
+.item-moneybar{
+	width:100%;
+	margin:0px;
+	overflow:hidden;
+	background:#d0d0d0;
+	height:2px;
+	position:relative;
+}
+.item-moneybar::after{
+	content:"";
+	width:33%;
+	display: block;
+	height:100%;
+	background:#ff9696;
+}
+
+/* 펀딩모인 금액, 퍼센트, 남은 시간 */
+.item-funddingstat{
+	margin:0px;
+	display:flex;
+	align-items: flex-end;
+	height:35px;
+}
+.fundding-amount{
+	font-size: 18px;
+	line-height:27px;
+	color:#3d3d3d;
+}
+.percent{
+	color:#ff9696;
+	margin-left:6px;
+}
+.rest-day{
+	margin-left:auto;
+	color:#9e9e9e;
+}
+
+/*======== 프로젝트 보기 ==========*/
+.project-head{
+	padding-bottom:30px;
+}
+.head-info{
+	width:1032px;
+	margin:0 auto;
+	position:relative;
+	height:auto;
+	padding:0px;
+}
+.head-title{
+	height:280px;
+	padding-bottom:0px;
+	align-items:center;    display: flex;
+    justify-content: center;
+}
+.title-div{
+	text-align:center;
+	margin: 0 auto;
+	padding:10px;
+}
+
+.projectimg{
+	width:100%;
+}
+.fundding-info{
+	padding:0px 15px 30px 45px;
+}
+.fundding-amount{
+	font-size:30px;
+	font-weight:700;
+	margin-top:18px;
+	letter-spacing:2px;
+}
+.fundding-stat{
+	font-size:14px;
+	font-weight:700;
+}
+.info-text{
+	font-size:14px;
+	min-width:70px;
+	line-height:30px;
+	display:inline-block;
+	color:#969696;
+}
+.info-now{
+	font-size:20px;
+}
+.info-goal{
+	font-size:12px;
+	color:#969696;
+	line-height:28px;
+}
+
+.btn-warp {
+	width:100%;
+}
+.btn-warp a{
+	display:inline-block;
+	padding:8px 14px;
+	border:1px solid #111;
+}
+.like-btn{
+	display:inline-block;
+	padding:8px 14px;
+	border:1px solid #111;
+	color:#ff9696;
+	background:#fff;
+}
+.project-bar {
+	border-top:1px solid #dbdbdb;
+	border-bottom:1px solid #dbdbdb;
+	box-shadow: rgb(0 0 0 / 10%) 0px 2px 3px;
+}
+.project-bar div a{
+	display:inline-block;
+	font-size:14px;
+	padding:20px 20px;
+}
+
+.content-section{
+	background:rgba(0,0,0,0.1);
+}
+.project-content, .writer-info, .reward-list {
+	padding:30px 30px;
+	background:#fff;
+	border:1px solid #dbdbdb;
+	box-shadow: rgba(0,0,0,0.1) 0px 1px 2px 4px;
+}
+.project-content img{
+	width:100%;
+}
